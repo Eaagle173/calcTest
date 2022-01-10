@@ -45,7 +45,7 @@ class Main {
                 result = calculated(one, two, operator);
                 try {
                     String resultRom = convertToRoman(result);
-                    System.out.println("Результат: " + in + " = " + resultRom);
+                    System.out.println(resultRom);
                 } catch (ArrayIndexOutOfBoundsException e) {
                     throw new ArrayIndexOutOfBoundsException("Ошибка. Ответ не может быть отрицательным.");
                 }
@@ -58,7 +58,7 @@ class Main {
                 two = Integer.parseInt(string3);
                 if (one <= 10 && one > 0 && two <= 10 && two > 0) {
                     result = calculated(one, two, operator);
-                    System.out.println("Ответ: " + in + " = " + result);
+                    System.out.println(result);
                 }
                 else {
                     throw new ArrayIndexOutOfBoundsException("Введены неверные значения");
